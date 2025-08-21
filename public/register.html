@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <div id="registrationForm" class="form-section">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="tel" id="phoneNumber" placeholder="Número de teléfono (ej. 525512345678)" required>
+            <button id="registerBtn">Registrarse</button>
+        </div>
+        <div id="verificationForm" class="form-section" style="display: none;">
+            <p>Se ha enviado un código de verificación a tu número de teléfono.</p>
+            <input type="text" id="verificationCode" placeholder="Código de 6 dígitos" required>
+            <button id="verifyBtn">Verificar</button>
+        </div>
+        <p id="message"></p>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
