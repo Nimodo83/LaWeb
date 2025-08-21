@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+h1, h3 {
+    color: #4a4a4a;
+}
+p {
+    margin: 0.5em 0;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #286090;
+}
+#message, #result, #sendInfoResult {
+    font-weight: bold;
+    margin-top: 1em;
+}
+.admin-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.admin-button:hover {
+    background-color: #286090;
+}
