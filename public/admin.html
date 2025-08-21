@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Administración</h1>
+        <h3>Conectar WhatsApp</h3>
+        <p>Ingresa el número de teléfono con el código de país (ej. 525512345678 para México)</p>
+        <form id="whatsappForm">
+            <input type="text" id="phoneNumber" placeholder="Número de WhatsApp" required>
+            <button type="submit">Generar Código de Emparejamiento</button>
+        </form>
+        <div id="result"></div>
+        <hr>
+        <h3>Enviar Información a Usuario</h3>
+        <p>Ingresa el nombre de usuario para enviarle su información (sin la contraseña) por WhatsApp.</p>
+        <form id="sendInfoForm">
+            <input type="text" id="targetUsername" placeholder="Nombre de usuario" required>
+            <button type="submit">Enviar Información</button>
+        </form>
+        <div id="sendInfoResult"></div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
