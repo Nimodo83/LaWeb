@@ -1,0 +1,55 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/index.js",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/register",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/verify",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/login",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/admin/send-info",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/check-and-save",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/admin/whatsapp",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/public/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-Requested-With, Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
